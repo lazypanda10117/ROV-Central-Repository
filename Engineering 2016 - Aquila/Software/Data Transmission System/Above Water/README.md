@@ -1,0 +1,1 @@
+Using I2C protocol to get underwater raw data to the above water Arduino and process the raw data to human readable data with some conversion in units.
