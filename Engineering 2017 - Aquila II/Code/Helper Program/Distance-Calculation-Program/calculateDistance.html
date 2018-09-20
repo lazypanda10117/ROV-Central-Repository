@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Distance Between 2 Objects</title>
+	<script src="resource/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="resource/bootstrap.min.css">
+	<script type="text/javascript">
+		var startCount = false;
+		var objSize = 0;
+		var objX1 = 0;
+		var objX2 = 0;
+		var objY1 = 0;
+		var objY2 = 0;
+		var disX1 = 0;
+		var disX2 = 0;
+		var disY1 = 0;
+		var disY2 = 0;
+		var clickNum = 0;
+		var finalCalcDist = 0;
+
+		function getMousePos(event) {
+			if(startCount){
+				if(clickNum == 1){
+				    objX1 = event.clientX;
+				    objY1 = event.clientY;
+				    document.getElementById("dataContainer1").innerHTML=("X: " + objX1 + "      Y: " + objY1);
+				}else if(clickNum == 2){
+				    objX2 = event.clientX;
+				    objY2 = event.clientY;
+				    document.getElementById("dataContainer2").innerHTML=("X: " + objX2 + "      Y: " + objY2);
+				}else if(clickNum == 3){
+					disX1 = event.clientX;
+					disY1 = event.clientY;
+					document.getElementById("dataContainer3").innerHTML=("X: " + disX1 + "      Y: " + disY1);
+				}else if(clickNum == 4){
+					disX2 = event.clientX;
+					disY2 = event.clientY;
+					document.getElementById("dataContainer4").innerHTML=("X: " + disX2 + "      Y: " + disY2);
+					calculateDist();
+				}else{
+
+				}
+				clickNum++;
+			}
+		}
+
+		function calculateDist(){
+			var objDistance = Math.sqrt(Math.pow((objX2-objX1),2)+Math.pow((objY2-objY1),2));
+			console.log("Virtual Object Distance: " + objDistance);
+			var magnifiedFactor = objDistance/objSize;
+			document.getElementById("factorContainer").innerHTML = "Multiply Factor: " + magnifiedFactor;
+			var distPixel =  Math.sqrt(Math.pow((disX2-disX1),2)+Math.pow((disY2-disY1),2));
+			console.log("Virtual Unknown Distance: " + distPixel);
+			var theoriticalEqt = "Real Distance = Virtual Distance / Magnified Factor";
+			document.getElementById("theoryEqtContainer").innerHTML = theoriticalEqt;
+			var eqtDisplay = "Real Distance = sqrt(("+disX2+"-"+disX1+")^2+("+disY2+"-"+disY1+")^2)/(sqrt(("+objX2+"-"+objX1+")^2+("+objY2+"-"+objY1+")^2)/"+objSize+")";
+			document.getElementById("eqtContainer").innerHTML = eqtDisplay;
+			var finalCalcDist = Math.round((distPixel/magnifiedFactor)*10000)/10000 + " cm";
+			document.getElementById("resultContainer").innerHTML = "Real Distance = " + finalCalcDist;	
+		}
+
+		function startClick(){
+			if(document.getElementById("initialText").value != ""){
+				if(startCount == false){
+					var objVal = document.getElementById("initialText").value;
+					objSize = objVal;
+					console.log(objSize);
+					startCount = true;
+				}
+			}else{
+				alert("Need to input object real size!");
+			}
+		}
+
+		function reset(){
+			startCount = false;
+			objSize = 0;
+			objX1 = 0;
+			objX2 = 0;
+			objY1 = 0;
+			objY2 = 0;
+			disX1 = 0;
+			disX2 = 0;
+			disY1 = 0;
+			disY2 = 0;
+			clickNum = 0;
+			finalCalcDist = 0;
+			document.getElementById("dataContainer1").innerHTML = "";
+			document.getElementById("dataContainer2").innerHTML = "";
+			document.getElementById("dataContainer3").innerHTML = "";
+			document.getElementById("dataContainer4").innerHTML = "";
+			document.getElementById("factorContainer").innerHTML = "";
+			document.getElementById("theoryEqtContainer").innerHTML = "";
+			document.getElementById("eqtContainer").innerHTML = "";
+			document.getElementById("resultContainer").innerHTML = "";
+			document.getElementById("initialText").value = "";
+		}
+
+		$(function() {
+		    $('#imgBlob').on('change', function(){
+		    	var input = $(this)[0];
+		    	var file = input.files[0];
+		    	var reader = new FileReader();
+		    	reader.onload = function(e){
+		       	$('#imageContainer').attr('src', e.target.result);
+		     	}
+		     	reader.readAsDataURL(file);   
+		    });
+		});
+
+		document.addEventListener("click", getMousePos);
+	</script>
+</head>
+<body>
+	<center>
+		<div class="well" style="width: 80%;">
+			<h2>Distance Calculation Program</h2>
+			<img id="imageContainer" width="720" height="480" src="">
+			<br>
+			<form class="form-inline" action="#">
+			  	<div class="form-group">
+			 		<input type="file" class="form-control" name="Choose Image" id="imgBlob" onChange="" accept="image/*">
+			 	</div>
+			  	<div class="form-group">	 	
+			 		<input type="text" class="form-control" id="initialText" placeholder="Object Size in cm">
+				</div>
+			</form>
+			<button id="startCount" class="btn btn-success" onClick="startClick()"> Start Calculate </button>
+			<button id="resetData" class="btn btn-danger" onClick="reset()"> Reset </button>
+			<br>
+			<div id="dataContainer1">
+				
+			</div>
+			<div id="dataContainer2">
+				
+			</div>
+			<div id="dataContainer3">
+				
+			</div>
+			<div id="dataContainer4">
+				
+			</div>
+			<div id="factorContainer">
+			
+			</div>
+			<div id="theoryEqtContainer">
+			
+			</div>
+			<div id="eqtContainer">
+			
+			</div>
+			<div id="resultContainer">
+			
+			</div>
+		</div>
+	</center>	
+</body>
+</html>
