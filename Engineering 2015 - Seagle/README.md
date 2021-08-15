@@ -14,13 +14,13 @@ This is the container for all the works of Seagle. Seagle is a collaborative eff
 
 **Technical Report**:
 
-[Aquila II Technical Report](Report/report.pdf)
+[Seagle Technical Report](Report/report.pdf)
 
 <br>
 
 **Company Specification Sheet**:
 
-[Specification Sheet](Report/Resources/specfication_sheet.pdf)
+[Specification Sheet](Report/Resources/specification_sheet.pdf)
 
 <br>
 

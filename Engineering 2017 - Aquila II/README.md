@@ -20,7 +20,7 @@ This is the container for all the works of Aquila II. Aquilla II is a collaborat
 
 **Company Specification Sheet**:
 
-![Specification Sheet](Report/Resources/specfication_sheet.png)
+![Specification Sheet](Report/Resources/specification_sheet.png)
 
 <br>
 

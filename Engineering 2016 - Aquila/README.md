@@ -8,19 +8,19 @@ This is the container for all the works of Aquila. Aquila is a collaborative eff
 
 **A picture of the ROV**:
 
-![Picture of the Aquila I](Report/Resources/picture_of_aquila.jpg)
+![Picture of the Aquila](Report/Resources/picture_of_aquila.jpg)
 
 <br>
 
 **Technical Report**:
 
-[Aquila I Technical Report](Report/report.pdf)
+[Aquila Technical Report](Report/report.pdf)
 
 <br>
 
 **Poster**:
 
-![Aquila I Poster](Report/Resources/poster.png)
+![Aquila Poster](Report/Resources/poster.png)
 
 <br>
 
