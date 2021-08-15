@@ -6,6 +6,12 @@ This is the container for all the works of Aquila II. Aquilla II is a collaborat
 
 <br>
 
+**A picture of the ROV**:
+
+![Picture of the Aquila II](Report/Resources/picture_of_aquila_II.jpg)
+
+<br>
+
 **Technical Report**:
 
 [Aquila II Technical Report](Report/report.pdf)
@@ -14,10 +20,10 @@ This is the container for all the works of Aquila II. Aquilla II is a collaborat
 
 **Company Specification Sheet**:
 
-![Specification Sheet](Report/Resources/Company%20Spec%20Sheet.png)
+[Specification Sheet](Report/Resources/specfication_sheet.png)
 
 <br>
 
 **ROV System Integration Diagram**:
 
-![System integration diagram](Report/Resources/System%20Integrated%20Diagram.jpg)
+![System integration diagram](Report/Resources/system_integrated_diagram.png)

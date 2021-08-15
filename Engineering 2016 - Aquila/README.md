@@ -1,20 +1,35 @@
 # Engineering-2016-Aquila-I
 
-This is the container for all the works of Aquila I. Aquilla I is a collaborative effort of the whole AIS Engineering Club 2016 - ROV Team.
+<br>
 
-Technical Report: [View Here](https://docs.google.com/viewer?url=https://github.com/lazypanda10117/Engineering-2016-Aquila/raw/master/Administrative/Technical%20Writing/Aquila%20Report.pdf)
+This is the container for all the works of Aquila. Aquila is a collaborative effort of the whole AIS Engineering Club - ROV Team in 2016.
 
-ROV Poster: ![Poster](https://raw.githubusercontent.com/lazypanda10117/Engineering-2016-Aquila/master/Administrative/Technical%20Writing/Aquila%20Poster.png)
+<br>
 
-Company Specification Sheet:
+**A picture of the ROV**:
 
-![Spec Sheet](https://raw.githubusercontent.com/lazypanda10117/Engineering-2016-Aquila/master/Administrative/Picture/Spec%20Sheet.png)
+![Picture of the Aquila I](Report/Resources/picture_of_aquila.jpg)
 
-A Picture of the ROV: 
+<br>
 
-![ROV Picture](https://github.com/lazypanda10117/Engineering-2016-Aquila/raw/master/Administrative/Picture/Fried%20Eagle.jpg)
+**Technical Report**:
 
-ROV System Integration Diagram:
+[Aquila I Technical Report](Report/report.pdf)
 
-![SID](https://raw.githubusercontent.com/lazypanda10117/Engineering-2016-Aquila/master/Administrative/Picture/Aquila%20SID(1).png)
+<br>
 
+**Poster**:
+
+![Aquila I Poster](Report/Resources/poster.png)
+
+<br>
+
+**Company Specification Sheet**:
+
+![Specification Sheet](Report/Resources/specification_sheet.png)
+
+<br>
+
+**ROV System Integration Diagram**:
+
+![System integration diagram](Report/Resources/system_integrated_diagram.png)

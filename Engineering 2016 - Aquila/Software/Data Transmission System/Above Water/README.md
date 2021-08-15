@@ -1,1 +1,3 @@
-Using I2C protocol to get underwater raw data to the above water Arduino and process the raw data to human readable data with some conversion in units.
+# Description of the code
+
+We used the I2C protocol to get the raw data from the under water Arduino to the Arduino above water. Then, we process data and produce human readable information about the current state of the ROV.
